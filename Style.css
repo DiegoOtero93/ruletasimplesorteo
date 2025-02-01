@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1a4a86;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 980px;
+	text-align: center;
+	color: #fff;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.concursantes {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+}
+
+canvas {
+	margin-top: 10px;
+	width: 100%;
+	max-width: 600px;
+}
+
+button {
+	position: relative;
+	padding: 10px 20px;
+	font-size: 18px;
+	background: #bf780f;
+	color: #fff;
+	border-style: none;
+	z-index: 10;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 100%;
+	max-width: 200px;
+}
+
+.winner {
+	font-size: 30px;
+	font-weight: bold;
+	color: #f9c74f;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 20px;
+	width: 90%;
+	max-width: 400px;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 8px;
+}
+
+/* Media Queries para hacer que la página sea responsiva en móviles */
+@media screen and (max-width: 768px) {
+	/* Ajuste para pantallas de tablets y móviles */
+	.contenedor {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.concursantes {
+		width: 100%;
+	}
+
+	canvas {
+		max-width: 100%;
+		height: auto;
+	}
+
+	button {
+		font-size: 16px;
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.winner {
+		font-size: 24px;
+		width: 90%;
+		max-width: 350px;
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* Ajustes adicionales para pantallas muy pequeñas (móviles) */
+	.winner {
+		font-size: 20px;
+		width: 90%;
+		max-width: 300px;
+		padding: 10px;
+	}
+
+	button {
+		font-size: 14px;
+		width: 100%;
+		max-width: 250px;
+	}
+}
